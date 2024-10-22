@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+*{
+    font-family: "Belleza", sans-serif;
+    color: rgb(39, 38, 38);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+fuente-grande
+fuente-mediana
+fuente-chica
+color-letra-menu
+color-letra-fotos
+color-letra-h-parrafos
+
+
+#color-fondo-header{
+    background-color: #ffffff;
+}
+
+#color-fondo-degradado{
+    background: linear-gradient(180deg, #FFFFFF, #72DBB8);
+}
+
+#color-fondo-footer{
+    height: 172px;
+    background-color: #4BAD8A;
+}
+
+
+header div{
+    width: 1100px;
+    height: 130px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+a {
+    text-decoration: none;
+}
+
+ .menu {
+    list-style: none;
+    color: rgb(39, 38, 38);
+}  
+
+#contenedor{
+    width: 1300px;
+    height: 600px; 
+    margin: auto;
+}
+
+/* header div nav a{
+    font-size: 20px;
+    color: rgb(39, 38, 38);
+    text-decoration: none;
+    margin: 10px;
+} */
+
