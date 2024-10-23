@@ -39,6 +39,10 @@ header{
     align-items: end;
 }
 
+.fa-solid-fa-cart-shopping{
+    font-size: 2em;
+}
+
 /* #logo{
     margin-top: 4em;
     margin-bottom: 0em;
