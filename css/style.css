@@ -2,36 +2,37 @@
 
 *{
     font-family: "Belleza", sans-serif;
-    color: rgb(39, 38, 38);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
 
-fuente-grande
+
+/* fuente-grande
 fuente-mediana
 fuente-chica
 color-letra-menu
 color-letra-fotos
-color-letra-h-parrafos
+color-letra-h-parrafos */
 
 
-#color-fondo-header{
-    background-color: #ffffff;
-}
+.fondo-header{
+    background-color: #526a62;
+    color: beige;
+    }
 
-#color-fondo-degradado{
-    background: linear-gradient(180deg, #FFFFFF, #72DBB8);
-}
-
-#color-fondo-footer{
-    height: 172px;
-    background-color: #4BAD8A;
+.fondo-main{
+    background-color: #fdfcfc;
 }
 
 
-header div{
+.color-fondo-footer{
+    
+    background-color: rgb(39, 38, 38);
+}
+
+#medidas-header{
     width: 1100px;
     height: 130px;
     margin: auto;
@@ -43,15 +44,20 @@ a {
     text-decoration: none;
 }
 
- .menu {
+.menu{
     list-style: none;
-    color: rgb(39, 38, 38);
+    color: beige;
 }  
 
-#contenedor{
-    width: 1300px;
+#medidas-main{
+    width: 100%;
     height: 600px; 
     margin: auto;
+}
+
+footer{
+    height: 172px;
+   
 }
 
 /* header div nav a{
