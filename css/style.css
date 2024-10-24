@@ -27,9 +27,7 @@ color-letra-h-parrafos */
 }
 
 
-.fondo-footer{
-    background-color: #526a62;
-}
+
 
 header{
     height: 130px;
@@ -74,21 +72,26 @@ main{
     margin: auto;
 }
 
-footer{
-    /* height: 172px; */
+.fondo-footer{
+    background-color: #526a62;
+    color: beige;
 }
 
 footer section {
-    width: 1200vw;
-    height: 30vh;
-    background-color: #c42121;
+    min-width: 100vw;
+    min-height: 30vh;
+    /* background-color: #c42121; */
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
 }
 
 .div-footer {
     width: 250px;
     height: 100px;
+    /* color: beige; */
     
-    border: solid;
+    /* border: solid; */
 }
 
