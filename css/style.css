@@ -64,6 +64,23 @@ main{
     background-color: #fdfcfc;
 }
 
+.img-fondo {    
+    height: 20vw;
+    background-image: url(/img/shampoos/sh2.jpg);
+    margin: auto;
+    background-size: auto;
+    /* filter: blur(8px); */
+    /* opacity: 0.0; */
+    z-index: 1;
+    
+}
+
+.img-fondo h1 {
+    font-size: 2em;
+    color: #47645a;
+    text-align: center;
+}
+
 .main-container {
     height: 15vw;
     display: grid;
