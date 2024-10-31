@@ -135,12 +135,7 @@ main{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    /este efecto hace una sobra paralela en la parte de abajo/
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    /* Ancho fijo de la tarjeta */
-    /* width: 250px;      */
     text-align: center;
-    /* si el texto es mas largo que la cards , no permiso que sobresalga */
     overflow: hidden;      
 }
 
@@ -165,7 +160,59 @@ main{
     font-size: 1.5em;
 }
 
+.main-container {
+    height: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 80px;
+    gap: 0 1em;
+    justify-content: center;
+    align-content: center;
+}
 
+.main-container div {
+    background-color: rgba(145, 196, 180, 0.5);
+    border-radius: 8px;
+}
+
+.free-h2 {
+    color: #47645a;
+    text-align: center;
+}
+
+.free-parrafos {
+    height: 10vw;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 80px;
+    gap: 0 1em;
+    justify-content: center;
+    align-content: center;
+}
+
+.free-parrafos {
+    background-color: rgba(74, 128, 111, 0.7);
+    border-radius: 20px;
+    margin: 0 150px 8px 150px;  
+    border: 5px solid #47645a; 
+}
+    
+
+.free {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    text-align: center;  
+    font-size: 1.5em;  
+}
+
+
+.card-avisos p {
+    color: rgb(138, 136, 136);
+    text-align: center;
+}
 
 .fondo-footer{
     background-color: #526a62;
