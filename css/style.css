@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
+
 *{
+    max-width: 100vw;
     font-family: "Belleza", sans-serif;
     margin: 0px;
     padding: 0px;
@@ -17,9 +19,9 @@ header{
     min-height: 20vh;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.caja {
+   margin: auto 10px;
+   padding: 10px 0;
 }
 
 .menu {
@@ -31,7 +33,6 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-
 
 .button{
     background-color: #526a62;
@@ -57,16 +58,41 @@ header{
     color: #63E6BE;
 }
 
-
-
-.fondo-main{
+main{
+    height: 600px; 
+    margin: auto;
     background-color: #fdfcfc;
 }
 
-main{
-    width: 1200px;
-    height: 600px; 
-    margin: auto;
+.main-container {
+    height: 15vw;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 80px;
+    gap: 1em 1em;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-container div {
+    background-color: rgba(145, 196, 180, 0.5);
+    border-radius: 8px;
+}
+
+.card-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-main h2 {
+    color: #47645a;
+}
+
+.card-main p {
+    color: rgb(138, 136, 136);
 }
 
 .fondo-footer{
@@ -75,9 +101,7 @@ main{
 }
 
 footer section {
-    min-width: 100vw;
     min-height: 30vh;
-    /* background-color: #c42121; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -87,8 +111,6 @@ footer section {
 .div-footer {
     width: 250px;
     height: 100px;
-    /* color: beige; */
     
-    /* border: solid; */
 }
 
