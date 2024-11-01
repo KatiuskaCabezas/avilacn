@@ -195,7 +195,7 @@ main{
 }
 
 footer section {
-    min-height: 20vh;
+    /* min-height: 20vh; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -230,6 +230,22 @@ footer section {
     gap: 1em;
     padding: 1em 1em;
     flex-wrap: wrap; */
+
+.shampoo {
+    width: 700px;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em 1em;
+    background-color: red;
+
+}
+
+.shampoo-img {
+    background-color: rgb(99, 60, 172);
+
+}
 
     /* height: 10vw;
     display: grid;
