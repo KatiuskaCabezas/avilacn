@@ -219,12 +219,11 @@ footer section {
     text-align: center;
 }
 
-.shampoo-h2 {
+/* .shampoo-h2 {
     color: #47645a;
-    text-align: center;
-}
+    text-align: center; */
 
-.shampoo {
+/* .shampoo { */
     /* display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -240,9 +239,9 @@ footer section {
     justify-content: center;
     align-content: center; */
    
-}
 
-.shampoo-img {
+
+/* .shampoo-img {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -274,4 +273,4 @@ footer section {
 .shampoo-img p {
 
 }
-
+ */
