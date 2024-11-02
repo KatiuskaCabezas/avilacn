@@ -273,4 +273,40 @@ footer section {
     padding: 0.5em;
 }
 
+/* Archivo Reseña.html */
+
+.main-resena {
+    height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(3, 60vh);
+    grid-template-rows: repeat(3, 60vh);
+    gap: 1em;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em 1em;
+    flex-wrap: nowrap;
+}
+
+.card-resena {
+    background-color: rgba(145, 196, 180, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;  
+}
+
+.card-resena p {
+    color: rgb(138, 136, 136);
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.card-resena h2 {
+    color: #47645a;
+    text-align: center;
+    font-size: 0.8em;
+}
+
 
