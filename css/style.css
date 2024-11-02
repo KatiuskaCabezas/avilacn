@@ -195,7 +195,6 @@ main{
 }
 
 footer section {
-    /* min-height: 20vh; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -219,61 +218,43 @@ footer section {
     text-align: center;
 }
 
-/* .shampoo-h2 {
+.shampoo-h2 {
     color: #47645a;
-    text-align: center; */
-
-/* .shampoo { */
-    /* display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 1em;
-    padding: 1em 1em;
-    flex-wrap: wrap; */
+    text-align: center;
+}   
 
 .shampoo {
-    width: 700px;
     height: 250vh;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 60vh);
     grid-template-rows: repeat(3, 1fr);
-    gap: 1em 1em;
-    background-color: red;
-
+    gap: 1em;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em 1em;
+    flex-wrap: nowrap;
 }
 
 .shampoo-img {
-    background-color: rgb(99, 60, 172);
-
-}
-
-    /* height: 10vw;
-    display: grid;
-    grid-template-columns: repeat(8, 200px);
-    grid-template-rows: 400px;
-    gap: 0 1em;
-    justify-content: center;
-    align-content: center; */
-   
-
-
-/* .shampoo-img {
-    background-color: #fff;
+    background-color: rgba(145, 196, 180, 0.1);
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 2px;
     text-align: center;
-    overflow: hidden;      
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;  
 }
-
+  
 .shampoo-img button {
     background-color: rgba(145, 196, 180, 0.5);
     color: rgb(138, 136, 136);
     padding: 8px 12px;
     border: none;
     border-radius: 4px;
-    font-size: 0.8em;
+    font-size: 0.6em;
     margin-bottom: 8px;
     text-align: center;
+    margin: 1em;
 }
 
 .shampoo-img button:hover {
@@ -283,10 +264,13 @@ footer section {
 .shampoo-img h3 {
     color: #47645a;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .shampoo-img p {
-
+    color: rgb(138, 136, 136);
+    font-size: 0.8em;
+    padding: 0.5em;
 }
- */
+
+
