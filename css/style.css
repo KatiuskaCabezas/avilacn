@@ -364,14 +364,14 @@ footer section {
 
 @media screen and (min-width: 768px) {
     .main-contacto {
-        background-color: red;
+        background-color: white;
     }
       
 }
 
 @media screen and (min-width: 1024px) {
     .main-contacto {
-        background-color: blue;
+    background-color: rgba(145, 196, 180, 0.2);
     }
       
 }
