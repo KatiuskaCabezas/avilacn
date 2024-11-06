@@ -312,8 +312,8 @@ footer section {
 /* Formulario contacto.htl*/
 
 .main-contacto {
-    width: 40vw;
-    height: 90vh;
+    max-width: 50vw;
+    /* height: 90vh; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -363,17 +363,18 @@ footer section {
 
 }
 
-@media screen and (min-width: 400px) {
-    .main-contacto {
-        background-color: #C8BBFA;
-        flex-wrap: wrap;
-    }
-      
-}
+/* Responsive Contacto*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 400px) {
+    .main-contacto {background-color: #9898b1;    }  
+}
+/* 
+@media screen and (max-width: 768px) {
     .main-contacto {
         background-color: white;
+        
+        width: calc(50% - 20px); 
+    
     }
       
 }
@@ -383,7 +384,43 @@ footer section {
     background-color: rgba(145, 196, 180, 0.2);
     }
       
+} */
+
+/* Responsive index.html*/
+
+/* @media (min-width: 400px) {
+    body {
+        width: calc(50% - 20px); 
+    }
 }
+
+@media (min-width: 500px) {
+    body {
+        width: 100%; 
+    }
+} */
+
+
+
+/* Responsivo para tarjetas de productos */
+
+/* @media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100%; 
+    }
+}
+
+@media (max-width:600px) {
+    .formulario { background: #f79c56;
+        border-radius: 3px;
+
+    } */
 
 
 
