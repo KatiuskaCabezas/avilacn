@@ -15,40 +15,84 @@ body {
 }
 
 header{
-    display: flex;
-    flex-direction: row;
-    background-color: #526a62;
-    color: beige;
-    min-height: 20vh;
+    background-color: rgb(82, 106, 98);
+    height: 20vh;
+    opacity: .8;
 }
 
-.caja {
+.enlace{
+    position: absolute;
+    padding: 2.5vh 10vh;
+}
+
+.logo{
+    height: 15vh;
+}
+
+.ul{
+    float: right;
+    margin-right: 3vw;
+}
+
+.ul li{
+    display: inline-block;
+    line-height: 20vh;
+    margin: 0 2vh;
+}
+
+.ul li a{
+    color: beige;
+    font-size: 1em;
+    padding: 7px 13px;
+    
+}
+
+.ul li a:hover{
+    color: #63E6BE;
+}
+
+.hamburger{
+    font-size: 1.5em;
+    float: right;
+    line-height: 20vh;
+    margin-right: 4vh;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* .caja {
    margin: auto 10px;
    padding: 10px 0;
-}
+} */
 
-.menu {
-    /* position: absolute; */
-    /* top: 0;
+/* .menu {
+    position: absolute; 
+    top: 0;
     left: 0;
-    right: 0; */ 
+    right: 0;
     display: flex;
-    flex-direction: row;
-    /* align-items: center;
-    justify-content: space-between; */
-}
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+} */
 
-.button{
+/* .button{
     background-color: #526a62;
-    border-radius: 15%;
+    border-radius: 8%;
     width: 4em;
     height: 2em;
     color: beige;
-}
+} */
 
-.menu .nav-menu ul li {
+/* .menu .nav-menu ul li {
     position: relative;
     float: left;
+    background-color: #63E6BE;
+    justify-content: center;
 }
 
 .menu .nav-menu ul li a {
@@ -60,7 +104,7 @@ header{
 
 .menu .nav-menu ul li a:hover {
     color: #63E6BE;
-}
+} */
 
 main{    
     background-color: #fdfcfc;
@@ -70,10 +114,10 @@ main{
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
-    height: 30vh;
-    background-image: url(/img/shampoos/main-img3.jpg);
-    background-repeat: no-repeat;
+    /* height: 30vh; */
+    background: url(/img/shampoos/main-img3.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     opacity: 0.7;   
 }
 
@@ -340,7 +384,7 @@ footer section {
     text-align: left;
 }
 
-/* Responsive Contacto*/
+/* Responsive Contactos*/
 
 @media screen and (min-width: 400px) {
     .main-contacto {background-color: #9898b1;    }  
@@ -367,6 +411,52 @@ footer section {
         flex-basis: 100%;       
     }    
 }
+
+/* Responsive Menu index.html*/
+
+@media (max-width: 952px) {
+    .enlace{
+        padding-left: 20px;
+    }
+
+    .ul li a{
+        font-size: 0.8em;
+    }   
+}
+
+@media (max-width: 858px) {
+    .hamburger{
+        display: block;
+    }
+    .ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 20vh;
+        background: #9898b1;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .ul li{
+        display: block;
+        margin: 5vw 0;
+        line-height: 5vh;
+    }
+
+    .ul li a{
+        font-size: 1em;
+    }   
+
+    nav .ul li a:hover{
+        color: #63E6BE;
+    }
+
+    #check:checked ~ .ul{
+        left: 0;
+    }    
+}
+
 
 
 
