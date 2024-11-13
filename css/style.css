@@ -43,8 +43,7 @@ header{
 .ul li a{
     color: beige;
     font-size: 1em;
-    padding: 7px 13px;
-    
+    padding: 7px 13px;    
 }
 
 .ul li a:hover{
@@ -64,74 +63,32 @@ header{
     display: none;
 }
 
-/* .caja {
-   margin: auto 10px;
-   padding: 10px 0;
-} */
-
-/* .menu {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: center; 
-} */
-
-/* .button{
-    background-color: #526a62;
-    border-radius: 8%;
-    width: 4em;
-    height: 2em;
-    color: beige;
-} */
-
-/* .menu .nav-menu ul li {
-    position: relative;
-    float: left;
-    background-color: #63E6BE;
-    justify-content: center;
-}
-
-.menu .nav-menu ul li a {
-    font-size: 1em;
-    padding: 20px;
-    color: beige;
-    display: block;
-}
-
-.menu .nav-menu ul li a:hover {
-    color: #63E6BE;
-} */
-
 main{    
     background-color: #fdfcfc;
 }
 
-.img-fondo {    
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    /* height: 30vh; */
-    background: url(/img/shampoos/main-img3.jpg) no-repeat;
+.img-fondo{    
+    height: 60vh;
+    background: url(/img/aceite.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.7;   
+    opacity: 0.7; 
+
 }
 
-.img-fondo div {
+.img-fondo div{
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    flex-direction: row;
+   align-content: center;    
 }
 
 .img-fondo div h1 {
     font-size: 3em;
-    color: #29332f;
-    text-align: center;    
+    color: beige;
+    text-align: center; 
+    align-content: center; 
 }
 
 .main-container {
@@ -200,14 +157,12 @@ main{
     margin: 5em 2em;
 }
 
-
 .free-parrafos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1em;
     margin: 2em;
 }
-
 
 .free {
     display: flex;
@@ -253,29 +208,25 @@ footer section {
     text-align: center;
 }   
 
-.shampoo {
-    /* width: 60vw; */
-    /* height: 250vh; */
+.shampoo{
     display: grid;
-    grid-template-columns: repeat(3, 60vh);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1em;
-    justify-content: center;
-    align-content: center;
-    padding: 1em 1em;
-    flex-wrap: nowrap;
+    margin: 5em 2em;
 }
 
-.shampoo-img {
+.shampoo-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
     background-color: rgba(145, 196, 180, 0.1);
     border: 1px solid #ddd;
     border-radius: 2px;
-    text-align: center;
+    text-align: center;   
     overflow: hidden;
-    justify-content: center;
-    align-content: center;  
 }
-  
+
 .shampoo-img button {
     background-color: rgba(145, 196, 180, 0.5);
     color: rgb(138, 136, 136);
@@ -306,16 +257,12 @@ footer section {
 
 /* Archivo reseña.html */
 
-.main-resena {
-    height: 250vh;
+.main-resena {  
     display: grid;
-    grid-template-columns: repeat(3, 60vh);
-    grid-template-rows: repeat(3, 60vh);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 30vh);
     gap: 1em;
-    justify-content: space-between;
-    align-content: center;
-    padding: 1em 1em;
-    flex-wrap: nowrap;
+    margin: 5em 2em;
 }
 
 .card-resena {
@@ -414,17 +361,21 @@ footer section {
 
 /* Responsive Menu index.html*/
 
-@media (max-width: 952px) {
+@media (max-width: 865px) {
     .enlace{
         padding-left: 20px;
     }
 
     .ul li a{
         font-size: 0.8em;
-    }   
+    }  
+    
+    .img-fondo{
+        font-size: .5em;
+    }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 739px) {
     .hamburger{
         display: block;
     }
@@ -433,11 +384,11 @@ footer section {
         width: 100%;
         height: 100vh;
         top: 20vh;
-        background: #9898b1;
+        background:rgb(48, 48, 43);
         left: -100%;
         text-align: center;
-        transition: all .5s;
     }
+
     .ul li{
         display: block;
         margin: 5vw 0;
@@ -455,42 +406,28 @@ footer section {
     #check:checked ~ .ul{
         left: 0;
     }    
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsivo para tarjetas de productos */
-
-/* @media (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px); 
+    header{
+        opacity: 1;
     }
-}
 
-@media (max-width: 500px) {
-    .card {
-        width: 100%; 
+    .img-fondo{
+        display: none;
     }
+
 }
 
-@media (max-width:600px) {
-    .formulario { background: #f79c56;
-        border-radius: 3px;
 
-    } */
+
+
+
+
+
+
+
+
+
+
 
 
 
