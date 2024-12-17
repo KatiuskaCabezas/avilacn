@@ -62,7 +62,7 @@ listadoProductos.innerHTML = "";
 
 productos.forEach(producto => {
     const html = `
-    <div class="shampoo-img" data-id="${producto.id}">
+        <div class="shampoo-img" data-id="${producto.id}">
             <img src="../img/shampoos/sh1.jpg" alt="Shampoo y Acondicionador Détox">
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
@@ -75,23 +75,30 @@ productos.forEach(producto => {
 
 
 document.addEventListener("click", (event) => {
-    
-    if (event.target.classList.contains("agregar-carrito")) {
-        const id= (event.target.closest("div").dataset.id);
+     if (event.target.classList.contains("agregar-carrito")) {
+        const id = (event.target.closest("div").dataset.id);
 
-        const productoArray = productos.find((producto) => producto.id == id);
-        console.log(productoArray);
+        /* agregar cantidad mismo producto*/
+        const index = carrito.findIndex((item) => item.id == id);
+        if (index == -1) {
+
+        const elemento = productos.find((producto) => producto.id == id);
+        console.log(elemento);
        
-        const { nombre, precio } = productoArray;
+        const { nombre, precio } = elemento;
   
         const producto = {
         id: id,
         nombre: nombre,
         precio: precio,
         cantidad: 1,
-        }
+        };
 
         carrito.push(producto);
+        } else {
+            const producto = carrito[index];
+            producto.cantidad++;
+        }
   
         localStorage.setItem("carrito", JSON.stringify(carrito));
     
