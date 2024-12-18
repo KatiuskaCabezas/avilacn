@@ -5,17 +5,30 @@ form.addEventListener("submit", (event) => {
 
     const nombre = document.querySelector("#nombre");
 
-    console.log(nombre.value.length);
+        console.log(nombre.value.length);
 
-    // if (nombre.value.length < 3) {
-    //     nombre.style.border = "1em solid red";
+        if (nombre.value.length < 3) {
+            nombre.style.border = "1px solid red";
 
-    //     const errorNombre = document.querySelector("#errorNombre");
+            const errorNombre = document.querySelector("#error-nombre");
 
-    //     errorNombre.textContent = "Campo Imcompleto"       
+            errorNombre.textContent = "Campo Incompleto";      
+            errorNombre.style.color = "red"
 
+        }
+
+    // const email = document.querySelector("#email");
+    // console.log(email.ariaRequired.length);
+
+    // if (email.ariaRequire.length < 3) {
+    //     email.style.border = "1px solid red";
+
+    //     const errorEmail = document.querySelector("#error-email");
+
+    //     errorEmail.textContent = "Email Inexistente";      
+    //     errorEmail.style.color = "red"
 
     // }
 
 
-})
+});

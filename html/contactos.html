@@ -22,23 +22,27 @@
     </header>  
     <main>
         <section class="main-contacto">
-            <form action="" method="post"> </form>
+            <form action="" method="post"> 
 
-            <div class="contacto">
-                <label for="nombre">Nombre y Apellido: </label>
-                <input type="text" name="nombre" id="nombre">   
-                <span id="error-nombre"></span>             
-            </div>
-            <div class="contacto">
-                <label for="email">Correo: </label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="contacto">
-                <label for="mensaje">Mensaje (Opcional): </label>
-                <textarea name="mensaje" id="mensaje">Escribe el mensaje</textarea>
-            </div>
+                <div class="contacto">
+                    <label for="nombre">Nombre y Apellido: </label>
+                    <input type="text" name="nombre" id="nombre">   
+                    <span id="error-nombre"></span>             
+                </div>
+                <div class="contacto">
+                    <label for="email">Correo: </label>
+                    <input type="email" name="email" id="email">
+                    <span id="error-email"></span>
+                 </div>
+                <div class="contacto">
+                    <label for="mensaje">Mensaje (Opcional): </label>
+                    <textarea name="mensaje" id="mensaje">Escribe el mensaje</textarea>
+                </div>
+                <button ctype="submit">Enviar</button>
+            </form>
 
-            <button ctype="submit">Enviar</button>
+            
+            
         </section>
     </main>   
     <footer class="fondo-footer">
@@ -60,7 +64,6 @@
 
     </footer>  
     <script src="https://kit.fontawesome.com/746dc34737.js" crossorigin="anonymous"></script>  
-    
     <script src="../js/formulario.js"></script>
 </body>
 </html>
