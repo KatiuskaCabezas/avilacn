@@ -66,7 +66,7 @@ productos.forEach(producto => {
             <img src="../img/${producto.imagen}" alt="${producto.nombre}">
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
-            <p>${producto.precio}</p>
+            <p>$ ${producto.precio}</p>
             <button type="submit" class="agregar-carrito">Agregar al Carrito</button>
         </div>
     `;
@@ -102,6 +102,11 @@ document.addEventListener("click", (event) => {
   
         localStorage.setItem("carrito", JSON.stringify(carrito));
     
-    }       
-
+    }  
     })   
+
+    
+  
+
+
+

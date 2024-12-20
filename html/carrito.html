@@ -20,8 +20,7 @@
     </header> 
     <main>
         <section class="carrito">
-          <h2>Carrito</h2>
-  
+           
           <table>
             <thead>
               <tr>
@@ -38,9 +37,29 @@
                 <td>Cantidad</td>
                 <td>Precio</td>
                 <td>Total</td>
+                <td><button type="button">Eliminar</button></td>
               </tr>
             </tbody>
           </table>
+
+          <br>
+        
+          <!-- Total a Pagar -->
+          <div id="total-pagar" >
+              Total: $0.00
+          </div>
+          <br>
+      
+          <!-- Botón Vaciar Carrito -->
+          <button id="vaciar-carrito">Vaciar Carrito</button>
+
+          <br>
+
+          <!-- Botones de acción -->
+           <div class="acciones-carrito">
+              <button id="seguir-comprando">Seguir comprando</button>
+              <button id="finalizar-compra">Finalizar compra</button>
+           </div>
         </section>       
     </main>
 
@@ -64,5 +83,8 @@
     </footer>  
     <script src="https://kit.fontawesome.com/746dc34737.js" crossorigin="anonymous"></script> 
     <script src="../js/carrito.js"></script>
+    
 </body>
 </html>
+
+
