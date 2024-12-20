@@ -7,12 +7,12 @@ form.addEventListener("submit", (event) => {
 
         console.log(nombre.value.length);
 
-        if (nombre.value.length < 3) {
+        if (nombre.value.length < 4) {
             nombre.style.border = "1px solid red";
 
             const errorNombre = document.querySelector("#error-nombre");
 
-            errorNombre.textContent = "Campo Incompleto";      
+            errorNombre.textContent = "Campo Incompleto, ingrece Nombre y Apellido";      
             errorNombre.style.color = "red"
 
         }
